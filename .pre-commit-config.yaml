@@ -24,7 +24,7 @@ repos:
       - id: forbid-crlf
       - id: forbid-tabs
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.13.1
+    rev: v8.13.3
     hooks:
       - id: cspell
         exclude: \.gitignore|.*\.properties
@@ -41,12 +41,12 @@ repos:
         additional_dependencies: ["tomli"]
         exclude: examples|tests|conf.py
   - repo: https://github.com/regebro/pyroma
-    rev: f4ef6995f6c054586fe6d5d33d180abe71ebabd0
+    rev: '4.2'
     hooks:
     - id: pyroma
       args: ["-d", "--min=10", ".", "--skip-tests", "ValidREST"]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.11.1
+    rev: v1.11.2
     hooks:
       - id: mypy
         additional_dependencies: ["types-docutils", "types-python-dateutil", "types-requests"]

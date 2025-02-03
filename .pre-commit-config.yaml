@@ -8,7 +8,7 @@ repos:
       - id: check-added-large-files
         args: [--enforce-all, --maxkb=100]
   - repo: https://github.com/pycqa/isort
-    rev: 5.13.2
+    rev: 6.0.0
     hooks:
       - id: isort
   - repo: https://github.com/jumanjihouse/pre-commit-hooks
@@ -24,7 +24,7 @@ repos:
       - id: forbid-crlf
       - id: forbid-tabs
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.17.0
+    rev: v8.17.2
     hooks:
       - id: cspell
         exclude: \.gitignore|.*\.properties
